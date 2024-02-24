@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    background-color: rgb(82, 82, 82);
+    background-image: url('assets/test/missing_textures.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  </style>
+
+  <!-- <link href="js-dos/js-dos.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Lib -->
+  <script src="js-dos/js-dos.js"></script>
+  <script src="jszip/FileSaver.min.js"></script>
+  <script src="jszip/jszip.min.js"></script>
+
+  <!-- VARIABLES -->
+  <script src="javascript/jsp_vars.js"></script>
+  <script src="javascript/update_html.js"></script>
+  <script src="javascript/loadData.js"></script>
+  <!-- Ctrl + R = Title text  | Ctrl + F = Body text  -->
+  <!-- Ctrl + Space = Advanced Options -->
+  <script src="javascript/editor.js"></script>
+</head>
+<body onload="loadTitle()">
+
+  <h1 class="slidetitle" id="title">ERROR!</h1>
+  <div id="editorDiv" class="editorDiv"> <!-- EDITOR -->
+    <form name="pickfile" class="inline"> <!--  -->
+      <label for="file">Background</label>
+      <input id="file" name="file" type="file" />
+      <label for="ziploading">LOAD JSP FILE</label>
+      <input id="ziploading" name="ziploading" type="file" />
+      <label for="colort">Title Color</label>
+      <input id="colort" type="color" value="#ffffff" />
+      <label for="colorb">Text Color</label>
+      <input id="colorb" type="color" value="#ffffff" />
+    </form>
+  </div> <!-- /EDITOR -->
+  <div class="transbox" id="slidediv">
+    <p class="slidedata">No data for this slide! Whoops!</p>
+    <p class="slidedata">Error code: 4M06U5 - Slide is f*cked up!</p>
+  </div>
+
+</body>
+</html>
